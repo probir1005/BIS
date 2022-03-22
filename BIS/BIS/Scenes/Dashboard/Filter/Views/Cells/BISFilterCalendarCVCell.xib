@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BISFilterCalendarCVCell" customModule="BIS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="57"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcS-7D-US0">
+                        <rect key="frame" x="0.0" y="2" width="60" height="20"/>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="12"/>
+                        <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dby-5u-vlY">
+                        <rect key="frame" x="5" y="27" width="50" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="55h-BN-tZN"/>
+                            <constraint firstAttribute="width" constant="50" id="XYs-rd-pv4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="12"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.1529411765" green="0.80392156859999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.1529411765" green="0.80392156859999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DcS-7D-US0" secondAttribute="trailing" id="74c-ty-l2j"/>
+                <constraint firstAttribute="bottom" secondItem="Dby-5u-vlY" secondAttribute="bottom" constant="5" id="RBX-RM-LKl"/>
+                <constraint firstItem="DcS-7D-US0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="cVH-hO-89z"/>
+                <constraint firstItem="DcS-7D-US0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uaH-vd-4L6"/>
+                <constraint firstItem="Dby-5u-vlY" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="wLG-eg-3iz"/>
+                <constraint firstItem="Dby-5u-vlY" firstAttribute="top" secondItem="DcS-7D-US0" secondAttribute="bottom" constant="5" id="yKF-rH-0Ts"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="68" height="77"/>
+            <connections>
+                <outlet property="dateButton" destination="Dby-5u-vlY" id="dun-p0-fHg"/>
+                <outlet property="dateLabel" destination="DcS-7D-US0" id="fYm-ER-7fZ"/>
+            </connections>
+            <point key="canvasLocation" x="150.72463768115944" y="102.79017857142857"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BISBiometricsVC" customModule="BIS" customModuleProvider="target">
+            <connections>
+                <outlet property="biometricsImageView" destination="vyF-tC-3NO" id="fIQ-Gu-Ks2"/>
+                <outlet property="contentTextView" destination="aKM-gk-xRf" id="fUk-cO-fCO"/>
+                <outlet property="enableButton" destination="r8K-Fh-tEG" id="oNV-k5-NEb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKP-Ve-GVD">
+                    <rect key="frame" x="30" y="54" width="354" height="289"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faceId" translatesAutoresizingMaskIntoConstraints="NO" id="vyF-tC-3NO">
+                            <rect key="frame" x="137" y="114.5" width="80" height="80"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="vyF-tC-3NO" firstAttribute="centerX" secondItem="nKP-Ve-GVD" secondAttribute="centerX" id="7rS-Pd-tLS"/>
+                        <constraint firstItem="vyF-tC-3NO" firstAttribute="centerY" secondItem="nKP-Ve-GVD" secondAttribute="centerY" constant="10" id="nei-NJ-Xdv"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKM-gk-xRf">
+                    <rect key="frame" x="40" y="353" width="334" height="190.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,</string>
+                    <color key="textColor" red="0.4039215686" green="0.43529411759999997" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0da-cO-JUT">
+                    <rect key="frame" x="0.0" y="553.5" width="414" height="308.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbx-am-aYF">
+                            <rect key="frame" x="304" y="189.5" width="70" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="WBb-hK-W6w"/>
+                            </constraints>
+                            <color key="tintColor" red="0.0" green="0.70980392160000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Skip" image="skip-arrow"/>
+                            <connections>
+                                <action selector="skipButtonTapped:" destination="-1" eventType="touchUpInside" id="dKh-aV-Jqa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8K-Fh-tEG" customClass="PrimaryButton" customModule="BIS" customModuleProvider="target">
+                            <rect key="frame" x="36" y="98.5" width="342" height="51"/>
+                            <color key="backgroundColor" red="0.0" green="0.7843137255" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="51" id="K1G-eG-UDL"/>
+                                <constraint firstAttribute="width" constant="400" id="zIP-Cz-BQw"/>
+                            </constraints>
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Enable Biometrics">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="zIP-Cz-BQw"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=regular">
+                                <mask key="constraints">
+                                    <include reference="zIP-Cz-BQw"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="enableBiometricsButtonTapped:" destination="-1" eventType="touchUpInside" id="ZQU-Jp-ERJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="r8K-Fh-tEG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0da-cO-JUT" secondAttribute="top" id="8qH-av-fYk"/>
+                        <constraint firstAttribute="trailing" secondItem="r8K-Fh-tEG" secondAttribute="trailing" constant="36" id="JJe-pA-B24"/>
+                        <constraint firstItem="r8K-Fh-tEG" firstAttribute="leading" secondItem="0da-cO-JUT" secondAttribute="leading" constant="36" id="MTx-7f-XnL"/>
+                        <constraint firstAttribute="trailing" secondItem="fbx-am-aYF" secondAttribute="trailing" constant="40" id="P83-Lr-hya"/>
+                        <constraint firstItem="r8K-Fh-tEG" firstAttribute="centerX" secondItem="0da-cO-JUT" secondAttribute="centerX" id="hTh-MA-ffk"/>
+                        <constraint firstItem="r8K-Fh-tEG" firstAttribute="centerY" secondItem="0da-cO-JUT" secondAttribute="centerY" constant="-30" id="hpw-hp-LIR"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fbx-am-aYF" secondAttribute="bottom" constant="10" id="mIf-7R-75m"/>
+                        <constraint firstItem="fbx-am-aYF" firstAttribute="top" secondItem="r8K-Fh-tEG" secondAttribute="bottom" priority="750" constant="40" id="vg5-BF-C4a"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hTh-MA-ffk"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=regular">
+                        <mask key="constraints">
+                            <exclude reference="JJe-pA-B24"/>
+                            <exclude reference="MTx-7f-XnL"/>
+                            <include reference="hTh-MA-ffk"/>
+                            <exclude reference="mIf-7R-75m"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aKM-gk-xRf" firstAttribute="top" secondItem="nKP-Ve-GVD" secondAttribute="bottom" constant="10" id="0s1-ua-lVv"/>
+                <constraint firstItem="0da-cO-JUT" firstAttribute="top" secondItem="aKM-gk-xRf" secondAttribute="bottom" constant="10" id="1ah-ju-qPq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nKP-Ve-GVD" secondAttribute="trailing" constant="30" id="1bq-fe-EN6"/>
+                <constraint firstItem="nKP-Ve-GVD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="1xj-nM-s0I"/>
+                <constraint firstItem="0da-cO-JUT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Oyz-2x-OWa"/>
+                <constraint firstItem="aKM-gk-xRf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="R2u-rV-a51"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0da-cO-JUT" secondAttribute="trailing" id="WHI-t3-gaY"/>
+                <constraint firstItem="aKM-gk-xRf" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="bSL-Y7-ELG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aKM-gk-xRf" secondAttribute="trailing" constant="40" id="dM9-Lr-N6q"/>
+                <constraint firstItem="nKP-Ve-GVD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="dXl-Ct-w5S"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0da-cO-JUT" secondAttribute="bottom" id="kr4-wS-fRE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="136.60714285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="faceId" width="80" height="80"/>
+        <image name="skip-arrow" width="10.5" height="10"/>
+    </resources>
+</document>

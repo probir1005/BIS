@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BISChartHomeCVCell" customModule="BIS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="492" height="439"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="492" height="439"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Esi-5h-mRa">
+                        <rect key="frame" x="0.0" y="0.0" width="492" height="439"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="2020 Prediction on 2019 Pipeline Conversion" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1K5-LI-6Xu">
+                                <rect key="frame" x="20" y="10" width="382" height="18"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                                <color key="textColor" red="0.1333333333" green="0.20000000000000001" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEJ-7u-9y5">
+                                <rect key="frame" x="452" y="8" width="20" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="9kr-Z4-HO4"/>
+                                    <constraint firstAttribute="width" constant="20" id="p54-4X-HYW"/>
+                                </constraints>
+                                <state key="normal" image="homeMenu"/>
+                                <connections>
+                                    <action selector="optionButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="s9L-kj-Jkv"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="maP-1M-8k6" userLabel="separator view">
+                                <rect key="frame" x="20" y="38" width="452" height="1"/>
+                                <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="WeX-rZ-E0X"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saZ-9n-cbh" customClass="HIChartView">
+                                <rect key="frame" x="6" y="45" width="480" height="388"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XjK-fU-o7o">
+                                <rect key="frame" x="422" y="8" width="20" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="QvM-rs-ahZ"/>
+                                    <constraint firstAttribute="width" constant="20" id="gA4-Nh-SIV"/>
+                                </constraints>
+                                <state key="normal" image="homeMax"/>
+                                <connections>
+                                    <action selector="expendButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="PAE-tw-WGb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="maP-1M-8k6" firstAttribute="top" secondItem="1K5-LI-6Xu" secondAttribute="bottom" constant="10" id="4hB-il-PKW"/>
+                            <constraint firstAttribute="trailing" secondItem="saZ-9n-cbh" secondAttribute="trailing" constant="6" id="4wq-Xl-r4B"/>
+                            <constraint firstAttribute="trailing" secondItem="vEJ-7u-9y5" secondAttribute="trailing" constant="20" id="A3V-1F-jj6"/>
+                            <constraint firstItem="saZ-9n-cbh" firstAttribute="top" secondItem="maP-1M-8k6" secondAttribute="bottom" constant="6" id="GKW-5T-rWu"/>
+                            <constraint firstItem="1K5-LI-6Xu" firstAttribute="top" secondItem="Esi-5h-mRa" secondAttribute="top" constant="10" id="JEz-qR-BYf"/>
+                            <constraint firstAttribute="bottom" secondItem="saZ-9n-cbh" secondAttribute="bottom" constant="6" id="JJJ-Tv-iT4"/>
+                            <constraint firstItem="1K5-LI-6Xu" firstAttribute="leading" secondItem="Esi-5h-mRa" secondAttribute="leading" constant="20" id="JLS-UI-zIL"/>
+                            <constraint firstItem="vEJ-7u-9y5" firstAttribute="centerY" secondItem="1K5-LI-6Xu" secondAttribute="centerY" id="Oav-wj-CBz"/>
+                            <constraint firstAttribute="trailing" secondItem="maP-1M-8k6" secondAttribute="trailing" constant="20" id="Unj-Q3-zdx"/>
+                            <constraint firstItem="vEJ-7u-9y5" firstAttribute="leading" secondItem="XjK-fU-o7o" secondAttribute="trailing" constant="10" id="bdw-Yn-hcU"/>
+                            <constraint firstItem="XjK-fU-o7o" firstAttribute="leading" secondItem="1K5-LI-6Xu" secondAttribute="trailing" constant="20" id="c3x-Aa-NKV"/>
+                            <constraint firstItem="maP-1M-8k6" firstAttribute="leading" secondItem="Esi-5h-mRa" secondAttribute="leading" constant="20" id="kOu-rU-gIF"/>
+                            <constraint firstItem="saZ-9n-cbh" firstAttribute="leading" secondItem="Esi-5h-mRa" secondAttribute="leading" constant="6" id="lJ2-nw-xas"/>
+                            <constraint firstItem="XjK-fU-o7o" firstAttribute="centerY" secondItem="1K5-LI-6Xu" secondAttribute="centerY" id="ztd-Ae-VCh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Esi-5h-mRa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9iw-Iw-yZC"/>
+                <constraint firstAttribute="trailing" secondItem="Esi-5h-mRa" secondAttribute="trailing" id="BlF-vl-EgQ"/>
+                <constraint firstAttribute="bottom" secondItem="Esi-5h-mRa" secondAttribute="bottom" id="Cke-4a-4wN"/>
+                <constraint firstItem="Esi-5h-mRa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bTW-8x-u5a"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="492" height="439"/>
+            <connections>
+                <outlet property="chartView" destination="saZ-9n-cbh" id="Hka-g7-9i7"/>
+                <outlet property="optionButton" destination="vEJ-7u-9y5" id="CzE-DX-zsK"/>
+                <outlet property="titleLabel" destination="1K5-LI-6Xu" id="J7Y-R5-bl3"/>
+            </connections>
+            <point key="canvasLocation" x="457.97101449275368" y="174.44196428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="homeMax" width="10.5" height="10.5"/>
+        <image name="homeMenu" width="3.5" height="12"/>
+    </resources>
+</document>

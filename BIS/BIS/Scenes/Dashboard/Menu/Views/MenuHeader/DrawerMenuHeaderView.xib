@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DrawerMenuHeaderView" customModule="BIS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="98"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nbn-4i-yxl">
+                    <rect key="frame" x="0.0" y="38" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="VVC-Bg-Yg0"/>
+                        <constraint firstAttribute="width" constant="20" id="g0S-Ya-UWK"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dPe-1r-tyg">
+                    <rect key="frame" x="299" y="38" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Das-VW-TH2"/>
+                        <constraint firstAttribute="width" constant="20" id="hIm-i8-wRJ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Reports" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzQ-Ht-mf7">
+                    <rect key="frame" x="38" y="15" width="243" height="66"/>
+                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.70980392160000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jgu-Qg-9cA">
+                    <rect key="frame" x="0.0" y="96" width="319" height="2"/>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="aDs-Bm-P0U"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hpr-dl-dC4">
+                    <rect key="frame" x="0.0" y="0.0" width="319" height="96"/>
+                    <connections>
+                        <action selector="headerTappedWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="BAe-k8-yMx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="dzQ-Ht-mf7" firstAttribute="centerY" secondItem="Nbn-4i-yxl" secondAttribute="centerY" id="1hm-jB-jFa"/>
+                <constraint firstAttribute="trailing" secondItem="dPe-1r-tyg" secondAttribute="trailing" id="4nL-uk-pKq"/>
+                <constraint firstItem="Jgu-Qg-9cA" firstAttribute="top" secondItem="Hpr-dl-dC4" secondAttribute="bottom" id="8aJ-FK-BdT"/>
+                <constraint firstItem="Nbn-4i-yxl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9da-Ni-BTg"/>
+                <constraint firstAttribute="bottom" secondItem="Jgu-Qg-9cA" secondAttribute="bottom" id="Jbr-1H-KUh"/>
+                <constraint firstItem="dzQ-Ht-mf7" firstAttribute="leading" secondItem="Nbn-4i-yxl" secondAttribute="trailing" constant="18" id="N9O-p5-qB2"/>
+                <constraint firstItem="dPe-1r-tyg" firstAttribute="leading" secondItem="dzQ-Ht-mf7" secondAttribute="trailing" constant="18" id="RBj-tV-azB"/>
+                <constraint firstItem="Jgu-Qg-9cA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UBQ-vK-PkZ"/>
+                <constraint firstItem="Hpr-dl-dC4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Udg-B2-YDO"/>
+                <constraint firstItem="Hpr-dl-dC4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bbM-4Y-Hhd"/>
+                <constraint firstItem="Jgu-Qg-9cA" firstAttribute="top" secondItem="dzQ-Ht-mf7" secondAttribute="bottom" constant="15" id="e4c-H3-fmi"/>
+                <constraint firstAttribute="trailing" secondItem="Hpr-dl-dC4" secondAttribute="trailing" id="fts-Fi-2Dq"/>
+                <constraint firstItem="dPe-1r-tyg" firstAttribute="centerY" secondItem="Nbn-4i-yxl" secondAttribute="centerY" id="fyp-7g-GWM"/>
+                <constraint firstAttribute="trailing" secondItem="Jgu-Qg-9cA" secondAttribute="trailing" id="jKQ-k7-NFn"/>
+                <constraint firstItem="dzQ-Ht-mf7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="xXg-sZ-UCo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrowImageView" destination="dPe-1r-tyg" id="VVb-TR-yMy"/>
+                <outlet property="menuImageView" destination="Nbn-4i-yxl" id="2QN-qe-g90"/>
+                <outlet property="menuLabel" destination="dzQ-Ht-mf7" id="tIb-l4-VxP"/>
+            </connections>
+            <point key="canvasLocation" x="123.91304347826087" y="-166.07142857142856"/>
+        </view>
+    </objects>
+</document>

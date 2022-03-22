@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cambria Bold.ttf">
+            <string>Cambria-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BISSplashVC" customModule="BIS" customModuleProvider="target">
+            <connections>
+                <outlet property="appLogoImageView" destination="wHz-oc-s9m" id="OcH-hN-flE"/>
+                <outlet property="subtitleLabel" destination="slx-dm-WJL" id="Phb-OL-71L"/>
+                <outlet property="titleView" destination="vpo-wI-EDa" id="ldn-Yc-ciO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDL-eL-Wuo">
+                    <rect key="frame" x="42" y="205" width="330" height="486.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSY-oa-Yvr">
+                            <rect key="frame" x="-25.5" y="0.0" width="381" height="360"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000149011612" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashIcon" translatesAutoresizingMaskIntoConstraints="NO" id="wHz-oc-s9m">
+                                    <rect key="frame" x="0.0" y="0.0" width="381" height="360"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="wHz-oc-s9m" secondAttribute="trailing" id="AfH-UM-6yp"/>
+                                <constraint firstItem="wHz-oc-s9m" firstAttribute="centerX" secondItem="dSY-oa-Yvr" secondAttribute="centerX" id="SX4-la-Kha"/>
+                                <constraint firstAttribute="bottom" secondItem="wHz-oc-s9m" secondAttribute="bottom" id="acf-eG-G2u"/>
+                                <constraint firstItem="wHz-oc-s9m" firstAttribute="top" secondItem="dSY-oa-Yvr" secondAttribute="top" id="fq5-hz-cj8"/>
+                                <constraint firstItem="wHz-oc-s9m" firstAttribute="leading" secondItem="dSY-oa-Yvr" secondAttribute="leading" id="yYB-eM-y0E"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" text="INTELLIGENCE SYSTEM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slx-dm-WJL">
+                            <rect key="frame" x="30" y="425" width="270" height="51.5"/>
+                            <fontDescription key="fontDescription" name="Cambria-Bold" family="Cambria" pointSize="24"/>
+                            <color key="textColor" red="0.1529411765" green="0.80392156859999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vpo-wI-EDa">
+                            <rect key="frame" x="0.0" y="370" width="330" height="70"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="Uc3-xd-J2B"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="slx-dm-WJL" secondAttribute="trailing" constant="30" id="1G9-m5-GNU"/>
+                        <constraint firstItem="dSY-oa-Yvr" firstAttribute="top" secondItem="JDL-eL-Wuo" secondAttribute="top" id="D5n-6b-jTT"/>
+                        <constraint firstItem="dSY-oa-Yvr" firstAttribute="centerY" secondItem="JDL-eL-Wuo" secondAttribute="centerY" constant="-63.25" id="HTG-nC-kkf"/>
+                        <constraint firstItem="slx-dm-WJL" firstAttribute="bottom" secondItem="JDL-eL-Wuo" secondAttribute="bottom" constant="-10" id="NvA-aJ-PWH"/>
+                        <constraint firstItem="slx-dm-WJL" firstAttribute="leading" secondItem="JDL-eL-Wuo" secondAttribute="leading" constant="30" id="PhV-Io-aWd"/>
+                        <constraint firstItem="dSY-oa-Yvr" firstAttribute="centerX" secondItem="JDL-eL-Wuo" secondAttribute="centerX" id="a7j-4V-8a0"/>
+                        <constraint firstAttribute="trailing" secondItem="vpo-wI-EDa" secondAttribute="trailing" id="cXp-DC-ao2"/>
+                        <constraint firstItem="slx-dm-WJL" firstAttribute="top" secondItem="vpo-wI-EDa" secondAttribute="bottom" constant="-15" id="dhA-hm-olq"/>
+                        <constraint firstItem="vpo-wI-EDa" firstAttribute="leading" secondItem="JDL-eL-Wuo" secondAttribute="leading" id="voI-ho-Z3b"/>
+                        <constraint firstItem="vpo-wI-EDa" firstAttribute="top" secondItem="dSY-oa-Yvr" secondAttribute="bottom" constant="10" id="wlR-81-4tA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JDL-eL-Wuo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Zdd-n2-CcC"/>
+                <constraint firstItem="JDL-eL-Wuo" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="xXL-Fe-VoU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="147"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="splashIcon" width="190.5" height="180"/>
+    </resources>
+</document>

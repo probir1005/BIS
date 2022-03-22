@@ -1,0 +1,37 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+inhibit_all_warnings!
+
+def pods
+  pod 'Alamofire'
+  pod 'Moya'
+  pod 'SwiftLint'
+  pod 'Swinject'
+  pod 'KeychainSwift'
+  pod 'EncryptedCoreData', :git => 'https://github.com/project-imas/encrypted-core-data.git'
+  pod 'LayoutHelper'
+  pod 'Highcharts'
+end
+
+def testPods
+  pod 'Quick'
+  pod 'Nimble'
+end
+
+target 'BIS' do
+  use_frameworks!
+  # Pods for BIS
+  pods
+
+  target 'BISTests' do
+    inherit! :search_paths
+    # Pods for testing
+    testPods
+  end
+
+  target 'BISUITests' do
+    # Pods for testing
+    testPods
+  end
+
+end

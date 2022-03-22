@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BISTabBarVC" customModule="BIS" customModuleProvider="target">
+            <connections>
+                <outlet property="controllerManagerView" destination="7dJ-rt-YdW" id="tlj-6E-O90"/>
+                <outlet property="tabBar" destination="Vkw-HE-Tnv" id="GcH-6F-a2o"/>
+                <outlet property="tabBarHeightConstraint" destination="V9s-VH-LSg" id="3tr-7O-xpT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7dJ-rt-YdW">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="806"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vkw-HE-Tnv" customClass="CustomTabBar" customModule="BIS" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="806" width="414" height="90"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="V9s-VH-LSg" customClass="NSLayoutHelper" customModule="LayoutHelper">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
+                                    <real key="value" value="70"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                                    <real key="value" value="70"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                                    <real key="value" value="70"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                                    <real key="value" value="70"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXS">
+                                    <real key="value" value="90"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXR">
+                                    <real key="value" value="90"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXMax">
+                                    <real key="value" value="100"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="tabCount">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Vkw-HE-Tnv" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="2Tx-Nz-mcd"/>
+                <constraint firstAttribute="trailing" secondItem="7dJ-rt-YdW" secondAttribute="trailing" id="9R4-SE-Mj1"/>
+                <constraint firstItem="7dJ-rt-YdW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Q29-db-zKN"/>
+                <constraint firstItem="7dJ-rt-YdW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="elC-mv-FxD"/>
+                <constraint firstItem="Vkw-HE-Tnv" firstAttribute="top" secondItem="7dJ-rt-YdW" secondAttribute="bottom" constant="0.10000000000000001" id="hsC-GI-7RS"/>
+                <constraint firstAttribute="bottom" secondItem="Vkw-HE-Tnv" secondAttribute="bottom" id="pX9-gG-h1S"/>
+                <constraint firstItem="Vkw-HE-Tnv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xY8-LB-hBI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </view>
+    </objects>
+</document>

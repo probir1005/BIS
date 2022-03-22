@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ssheader" id="U6b-Vx-4bR" customClass="BISSpreadSheetHeaderView" customModule="BIS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6np-ns-Q7i">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JzQ-t3-ykB">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="JzQ-t3-ykB" firstAttribute="top" secondItem="6np-ns-Q7i" secondAttribute="top" id="BKx-Ut-rBC"/>
+                        <constraint firstAttribute="trailing" secondItem="JzQ-t3-ykB" secondAttribute="trailing" id="WI9-F3-ips"/>
+                        <constraint firstAttribute="bottom" secondItem="JzQ-t3-ykB" secondAttribute="bottom" id="YgN-2d-uey"/>
+                        <constraint firstItem="JzQ-t3-ykB" firstAttribute="leading" secondItem="6np-ns-Q7i" secondAttribute="leading" id="raz-Jm-hn9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="6np-ns-Q7i" secondAttribute="trailing" id="A99-Di-X6y"/>
+                <constraint firstItem="6np-ns-Q7i" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="D5p-Ry-hQb"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="6np-ns-Q7i" secondAttribute="bottom" id="azK-JT-KUa"/>
+                <constraint firstItem="6np-ns-Q7i" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="oME-9t-tXx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="headerStackView" destination="JzQ-t3-ykB" id="rsw-Ja-tld"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="123.54910714285714"/>
+        </collectionReusableView>
+    </objects>
+</document>
