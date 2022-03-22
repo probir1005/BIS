@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BISPINRegisterVC" customModule="BIS" customModuleProvider="target">
+            <connections>
+                <outlet property="alertLabel" destination="zLO-Yb-sTj" id="sI4-5c-gzA"/>
+                <outlet property="codeView" destination="ihc-Oq-eyQ" id="VZP-Eu-Kek"/>
+                <outlet property="keyboard" destination="1fg-0b-rfK" id="4up-eu-hWJ"/>
+                <outlet property="screenInfoLabel" destination="wUj-pv-LgI" id="cJO-Hd-Kxu"/>
+                <outlet property="screenTitleLabel" destination="FJ6-Id-B9m" id="ruN-u1-NE6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Enter PIN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJ6-Id-B9m">
+                    <rect key="frame" x="35.333333333333343" y="144" width="304.33333333333326" height="35.666666666666657"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="0Oy-VV-2UF"/>
+                        <constraint firstAttribute="width" constant="39" id="DJi-h3-4uY"/>
+                        <constraint firstAttribute="height" constant="26" id="bIs-S3-dOX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="bIs-S3-dOX"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="0Oy-VV-2UF"/>
+                            <exclude reference="DJi-h3-4uY"/>
+                            <include reference="bIs-S3-dOX"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular">
+                        <mask key="constraints">
+                            <exclude reference="DJi-h3-4uY"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Entering pin App will be secured from unknown user" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUj-pv-LgI">
+                    <rect key="frame" x="86" y="216.66666666666666" width="203" height="65.999999999999972"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="ZV1-hF-xyN"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="20" id="zhX-r2-Wj4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ZV1-hF-xyN"/>
+                            <exclude reference="zhX-r2-Wj4"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact">
+                        <mask key="constraints">
+                            <include reference="zhX-r2-Wj4"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular">
+                        <mask key="constraints">
+                            <include reference="ZV1-hF-xyN"/>
+                        </mask>
+                    </variation>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihc-Oq-eyQ" customClass="CodeView" customModule="BIS" customModuleProvider="target">
+                    <rect key="frame" x="48.666666666666657" y="377.66666666666669" width="277.66666666666674" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="agj-F8-jWd"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTT-Nh-yIM">
+                    <rect key="frame" x="33" y="468" width="309" height="230"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fg-0b-rfK" customClass="NumericKeyboard" customModule="BIS" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="309" height="230"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="1fg-0b-rfK" firstAttribute="top" secondItem="JTT-Nh-yIM" secondAttribute="top" id="8nl-SV-9jm"/>
+                        <constraint firstAttribute="height" constant="210" id="D2g-aE-lYX"/>
+                        <constraint firstAttribute="width" constant="308.67000000000002" id="TeB-ye-WES"/>
+                        <constraint firstAttribute="trailing" secondItem="1fg-0b-rfK" secondAttribute="trailing" id="XOb-xA-xR9"/>
+                        <constraint firstAttribute="bottom" secondItem="1fg-0b-rfK" secondAttribute="bottom" id="ZSL-wK-L6D"/>
+                        <constraint firstAttribute="height" constant="230" id="cst-jx-g3N"/>
+                        <constraint firstItem="1fg-0b-rfK" firstAttribute="leading" secondItem="JTT-Nh-yIM" secondAttribute="leading" id="dbd-Ji-6Wb"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="D2g-aE-lYX"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact">
+                        <mask key="constraints">
+                            <include reference="D2g-aE-lYX"/>
+                            <exclude reference="cst-jx-g3N"/>
+                        </mask>
+                    </variation>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second PIN was different than the first one. Please try this again." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLO-Yb-sTj">
+                    <rect key="frame" x="48.666666666666657" y="427.66666666666669" width="277.66666666666674" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="RFq-dk-JQS"/>
+                        <constraint firstAttribute="height" constant="16" id="ivF-Wt-8Cf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="12"/>
+                    <color key="textColor" red="0.82745098039215681" green="0.22745098039215686" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ivF-Wt-8Cf"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="RFq-dk-JQS"/>
+                            <include reference="ivF-Wt-8Cf"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zLO-Yb-sTj" firstAttribute="trailing" secondItem="ihc-Oq-eyQ" secondAttribute="trailing" id="1X5-at-1ad"/>
+                <constraint firstItem="wUj-pv-LgI" firstAttribute="width" secondItem="JTT-Nh-yIM" secondAttribute="width" multiplier="0.657895" id="2Bb-bi-SMY"/>
+                <constraint firstItem="FJ6-Id-B9m" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3pm-3B-DCV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JTT-Nh-yIM" secondAttribute="bottom" id="4qU-Vg-5nA" customClass="NSLayoutHelper" customModule="LayoutHelper">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXMax">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstItem="FJ6-Id-B9m" firstAttribute="width" secondItem="wUj-pv-LgI" secondAttribute="width" multiplier="1.5" id="7gl-bA-6E3"/>
+                <constraint firstItem="FJ6-Id-B9m" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7rq-F5-Mg4"/>
+                <constraint firstItem="ihc-Oq-eyQ" firstAttribute="top" secondItem="wUj-pv-LgI" secondAttribute="bottom" constant="5" id="8AX-Qk-8UX" customClass="NSLayoutHelper" customModule="LayoutHelper">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXMax">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXR">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXS">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstItem="wUj-pv-LgI" firstAttribute="top" secondItem="FJ6-Id-B9m" secondAttribute="bottom" constant="37" id="8Xk-Ee-aoy" customClass="NSLayoutHelper" customModule="LayoutHelper">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                            <real key="value" value="37"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                            <real key="value" value="57"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstItem="zLO-Yb-sTj" firstAttribute="top" secondItem="ihc-Oq-eyQ" secondAttribute="bottom" constant="5" id="CHj-aW-slh"/>
+                <constraint firstItem="wUj-pv-LgI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dzo-zM-EYT"/>
+                <constraint firstItem="ihc-Oq-eyQ" firstAttribute="width" secondItem="JTT-Nh-yIM" secondAttribute="width" multiplier="0.9" id="Paj-57-9QX"/>
+                <constraint firstItem="JTT-Nh-yIM" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.78" id="QFf-iJ-zN5"/>
+                <constraint firstItem="zLO-Yb-sTj" firstAttribute="leading" secondItem="ihc-Oq-eyQ" secondAttribute="leading" id="cHf-Cn-orS"/>
+                <constraint firstItem="ihc-Oq-eyQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cag-Ts-Uh1"/>
+                <constraint firstItem="zLO-Yb-sTj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cc6-oN-HaT"/>
+                <constraint firstItem="JTT-Nh-yIM" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="cpC-dG-aFT"/>
+                <constraint firstItem="FJ6-Id-B9m" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="g7W-Lv-5g8"/>
+                <constraint firstItem="wUj-pv-LgI" firstAttribute="top" secondItem="FJ6-Id-B9m" secondAttribute="bottom" constant="12" id="gM0-rK-3Bq" customClass="NSLayoutHelper" customModule="LayoutHelper">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXMax">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXR">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXS">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstItem="ihc-Oq-eyQ" firstAttribute="top" secondItem="wUj-pv-LgI" secondAttribute="bottom" constant="95" id="jJI-aS-iCE" customClass="NSLayoutHelper" customModule="LayoutHelper">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXMax">
+                            <real key="value" value="100"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXS">
+                            <real key="value" value="75"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXR">
+                            <real key="value" value="75"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstItem="zLO-Yb-sTj" firstAttribute="top" secondItem="ihc-Oq-eyQ" secondAttribute="bottom" constant="10" id="poh-TN-12Z"/>
+                <constraint firstItem="ihc-Oq-eyQ" firstAttribute="top" secondItem="wUj-pv-LgI" secondAttribute="bottom" constant="90" id="ufM-M3-e4u"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JTT-Nh-yIM" secondAttribute="bottom" constant="80" id="yWx-no-19T" customClass="NSLayoutHelper" customModule="LayoutHelper">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                            <real key="value" value="50"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstItem="FJ6-Id-B9m" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="z3u-7R-MWf"/>
+                <constraint firstItem="JTT-Nh-yIM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zsI-fl-D6r"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4qU-Vg-5nA"/>
+                    <exclude reference="yWx-no-19T"/>
+                    <exclude reference="7gl-bA-6E3"/>
+                    <exclude reference="g7W-Lv-5g8"/>
+                    <exclude reference="gM0-rK-3Bq"/>
+                    <exclude reference="8AX-Qk-8UX"/>
+                    <exclude reference="jJI-aS-iCE"/>
+                    <exclude reference="QFf-iJ-zN5"/>
+                    <exclude reference="cpC-dG-aFT"/>
+                    <exclude reference="CHj-aW-slh"/>
+                    <exclude reference="cc6-oN-HaT"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact">
+                <mask key="constraints">
+                    <include reference="4qU-Vg-5nA"/>
+                    <include reference="g7W-Lv-5g8"/>
+                    <exclude reference="z3u-7R-MWf"/>
+                    <exclude reference="2Bb-bi-SMY"/>
+                    <exclude reference="8Xk-Ee-aoy"/>
+                    <include reference="gM0-rK-3Bq"/>
+                    <include reference="8AX-Qk-8UX"/>
+                    <exclude reference="ufM-M3-e4u"/>
+                    <exclude reference="1X5-at-1ad"/>
+                    <include reference="CHj-aW-slh"/>
+                    <exclude reference="cHf-Cn-orS"/>
+                    <include reference="cc6-oN-HaT"/>
+                    <exclude reference="poh-TN-12Z"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular">
+                <mask key="constraints">
+                    <include reference="yWx-no-19T"/>
+                    <include reference="jJI-aS-iCE"/>
+                    <exclude reference="ufM-M3-e4u"/>
+                    <include reference="cpC-dG-aFT"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="constraints">
+                    <include reference="7gl-bA-6E3"/>
+                    <exclude reference="QFf-iJ-zN5"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <exclude reference="cpC-dG-aFT"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="137.27678571428569" y="91.304347826086968"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BISChangePINVC" customModule="BIS" customModuleProvider="target">
+            <connections>
+                <outlet property="alertLabel" destination="CNS-0e-WYj" id="Z8D-dc-Ffm"/>
+                <outlet property="codeView" destination="uPD-R6-D14" id="IvG-62-Cii"/>
+                <outlet property="keyboard" destination="Ghv-Yi-EAh" id="cgS-Eu-7xB"/>
+                <outlet property="navBarView" destination="VZk-j3-G59" id="gso-7M-YMx"/>
+                <outlet property="screenInfoLabel" destination="gdA-4W-i9z" id="KQX-kP-LGa"/>
+                <outlet property="screenTitleLabel" destination="yh1-Bk-4SB" id="M5q-k3-lo7"/>
+                <outlet property="settingsButton" destination="RDM-g3-6gR" id="Tk1-HD-7Rz"/>
+                <outlet property="view" destination="Wdh-9G-2hY" id="4rC-gJ-Iuo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Wdh-9G-2hY">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Enter PIN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yh1-Bk-4SB">
+                    <rect key="frame" x="53" y="100" width="269" height="30.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Pcm-tp-1zL"/>
+                        <constraint firstAttribute="height" constant="26" id="TWH-6m-ajI"/>
+                        <constraint firstAttribute="width" constant="39" id="jKz-cz-EtL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="TWH-6m-ajI"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="Pcm-tp-1zL"/>
+                            <include reference="TWH-6m-ajI"/>
+                            <exclude reference="jKz-cz-EtL"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular">
+                        <mask key="constraints">
+                            <exclude reference="jKz-cz-EtL"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Entering pin App will be secured from unknown user" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdA-4W-i9z">
+                    <rect key="frame" x="91.5" y="167.5" width="192" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Igo-fh-nlg"/>
+                        <constraint firstAttribute="height" id="j5Y-Tq-Fb5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Igo-fh-nlg"/>
+                            <exclude reference="j5Y-Tq-Fb5"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact">
+                        <mask key="constraints">
+                            <include reference="Igo-fh-nlg"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular">
+                        <mask key="constraints">
+                            <include reference="j5Y-Tq-Fb5"/>
+                        </mask>
+                    </variation>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uPD-R6-D14" customClass="CodeView" customModule="BIS" customModuleProvider="target">
+                    <rect key="frame" x="56" y="262.5" width="263" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="NXA-YP-9zO"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyl-fK-ZO7">
+                    <rect key="frame" x="41.5" y="357" width="292.5" height="230"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ghv-Yi-EAh" customClass="NumericKeyboard" customModule="BIS" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="292.5" height="230"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="Ghv-Yi-EAh" firstAttribute="leading" secondItem="cyl-fK-ZO7" secondAttribute="leading" id="78O-Z7-dmd"/>
+                        <constraint firstAttribute="height" constant="230" id="G9c-Do-i3L"/>
+                        <constraint firstAttribute="trailing" secondItem="Ghv-Yi-EAh" secondAttribute="trailing" id="P06-kO-tGW"/>
+                        <constraint firstItem="Ghv-Yi-EAh" firstAttribute="top" secondItem="cyl-fK-ZO7" secondAttribute="top" id="XtO-8L-hE2"/>
+                        <constraint firstAttribute="height" constant="210" id="fDb-9D-sLC"/>
+                        <constraint firstAttribute="bottom" secondItem="Ghv-Yi-EAh" secondAttribute="bottom" id="g6U-qu-uFV"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="fDb-9D-sLC"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="G9c-Do-i3L"/>
+                            <include reference="fDb-9D-sLC"/>
+                        </mask>
+                    </variation>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second PIN was different than the first one. Please try this again." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNS-0e-WYj">
+                    <rect key="frame" x="56" y="312.5" width="263" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="f4E-Cy-L4W"/>
+                        <constraint firstAttribute="height" constant="16" id="hUg-UY-hWn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="12"/>
+                    <color key="textColor" red="0.82745098039999998" green="0.2274509804" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hUg-UY-hWn"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="f4E-Cy-L4W"/>
+                            <include reference="hUg-UY-hWn"/>
+                        </mask>
+                    </variation>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VZk-j3-G59">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar" translatesAutoresizingMaskIntoConstraints="NO" id="ScO-Zj-TXu">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="ScO-Zj-TXu" firstAttribute="top" secondItem="VZk-j3-G59" secondAttribute="top" id="47W-1Y-sBb"/>
+                        <constraint firstAttribute="trailing" secondItem="ScO-Zj-TXu" secondAttribute="trailing" id="6Td-e5-DJL"/>
+                        <constraint firstAttribute="height" constant="103" id="S4p-9P-9s5"/>
+                        <constraint firstItem="ScO-Zj-TXu" firstAttribute="leading" secondItem="VZk-j3-G59" secondAttribute="leading" id="hqK-1r-oSC"/>
+                        <constraint firstAttribute="bottom" secondItem="ScO-Zj-TXu" secondAttribute="bottom" id="ySN-yL-tvO"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDM-g3-6gR">
+                    <rect key="frame" x="20" y="10" width="100" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="GIz-8Z-Nga"/>
+                        <constraint firstAttribute="width" constant="100" id="edc-Jc-UE2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                    <color key="tintColor" red="0.1529411765" green="0.80392156859999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="6" maxX="10" maxY="6"/>
+                    <state key="normal" title="Settings" image="arrow-back">
+                        <color key="titleColor" red="0.1529411765" green="0.80392156859999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="settingsButtonAction:" destination="-1" eventType="touchUpInside" id="7HJ-us-AD1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cyl-fK-ZO7" firstAttribute="width" secondItem="Wdh-9G-2hY" secondAttribute="width" multiplier="0.78" id="1Ij-Pu-p6V"/>
+                <constraint firstItem="cyl-fK-ZO7" firstAttribute="width" secondItem="Wdh-9G-2hY" secondAttribute="width" multiplier="0.45" id="1TT-B1-1AR"/>
+                <constraint firstItem="cyl-fK-ZO7" firstAttribute="width" secondItem="Wdh-9G-2hY" secondAttribute="width" multiplier="0.78" id="2uG-aT-0hQ"/>
+                <constraint firstItem="uPD-R6-D14" firstAttribute="top" secondItem="gdA-4W-i9z" secondAttribute="bottom" constant="10" id="8c9-Mu-HAe" customClass="NSLayoutHelper" customModule="LayoutHelper">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXMax">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXR">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXS">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstItem="gdA-4W-i9z" firstAttribute="top" secondItem="yh1-Bk-4SB" secondAttribute="bottom" constant="37" id="8xq-eE-KrY">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                            <real key="value" value="37"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                            <real key="value" value="57"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstItem="yh1-Bk-4SB" firstAttribute="top" secondItem="OJw-nV-bTh" secondAttribute="top" constant="100" id="9Ke-gd-ZBl"/>
+                <constraint firstItem="uPD-R6-D14" firstAttribute="width" secondItem="cyl-fK-ZO7" secondAttribute="width" multiplier="0.9" id="9ue-ta-m7I"/>
+                <constraint firstItem="gdA-4W-i9z" firstAttribute="centerX" secondItem="Wdh-9G-2hY" secondAttribute="centerX" id="Ach-aj-3T7"/>
+                <constraint firstItem="CNS-0e-WYj" firstAttribute="centerX" secondItem="Wdh-9G-2hY" secondAttribute="centerX" id="BfG-mx-999"/>
+                <constraint firstItem="RDM-g3-6gR" firstAttribute="leading" secondItem="OJw-nV-bTh" secondAttribute="leading" constant="20" id="DpE-sV-x2u"/>
+                <constraint firstItem="cyl-fK-ZO7" firstAttribute="centerX" secondItem="Wdh-9G-2hY" secondAttribute="centerX" id="Ghc-vN-oEp"/>
+                <constraint firstItem="OJw-nV-bTh" firstAttribute="bottom" secondItem="cyl-fK-ZO7" secondAttribute="bottom" constant="80" id="MiK-kZ-JDK" customClass="NSLayoutHelper" customModule="LayoutHelper">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                            <real key="value" value="60"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                            <real key="value" value="60"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                            <real key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstItem="cyl-fK-ZO7" firstAttribute="width" secondItem="Wdh-9G-2hY" secondAttribute="width" multiplier="0.8" id="PZp-ZI-C4m"/>
+                <constraint firstItem="OJw-nV-bTh" firstAttribute="bottom" secondItem="cyl-fK-ZO7" secondAttribute="bottom" constant="5" id="Pw4-6r-fGT"/>
+                <constraint firstItem="yh1-Bk-4SB" firstAttribute="width" secondItem="gdA-4W-i9z" secondAttribute="width" multiplier="1.4" id="Qa0-iR-xDb"/>
+                <constraint firstItem="uPD-R6-D14" firstAttribute="centerX" secondItem="Wdh-9G-2hY" secondAttribute="centerX" id="RL2-vf-A3W"/>
+                <constraint firstItem="yh1-Bk-4SB" firstAttribute="centerX" secondItem="Wdh-9G-2hY" secondAttribute="centerX" id="S6A-NP-ks7"/>
+                <constraint firstItem="CNS-0e-WYj" firstAttribute="top" secondItem="uPD-R6-D14" secondAttribute="bottom" constant="10" id="VNf-IB-SyN"/>
+                <constraint firstItem="gdA-4W-i9z" firstAttribute="top" secondItem="yh1-Bk-4SB" secondAttribute="bottom" constant="15" id="Vy6-C9-DwO" customClass="NSLayoutHelper" customModule="LayoutHelper">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXMax">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXR">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXS">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstItem="VZk-j3-G59" firstAttribute="top" secondItem="Wdh-9G-2hY" secondAttribute="top" id="WdA-M9-WOm"/>
+                <constraint firstItem="RDM-g3-6gR" firstAttribute="top" secondItem="OJw-nV-bTh" secondAttribute="top" constant="10" id="WrU-pJ-GAk"/>
+                <constraint firstItem="uPD-R6-D14" firstAttribute="top" secondItem="gdA-4W-i9z" secondAttribute="bottom" constant="90" id="f4p-ab-g4j"/>
+                <constraint firstItem="CNS-0e-WYj" firstAttribute="top" secondItem="uPD-R6-D14" secondAttribute="bottom" constant="5" id="fd1-8A-BWm"/>
+                <constraint firstItem="CNS-0e-WYj" firstAttribute="trailing" secondItem="uPD-R6-D14" secondAttribute="trailing" id="fdV-Qs-DKe"/>
+                <constraint firstItem="yh1-Bk-4SB" firstAttribute="top" secondItem="OJw-nV-bTh" secondAttribute="top" constant="22" id="hFw-Bw-RmP"/>
+                <constraint firstItem="yh1-Bk-4SB" firstAttribute="centerX" secondItem="Wdh-9G-2hY" secondAttribute="centerX" id="hnX-ST-RRK"/>
+                <constraint firstItem="VZk-j3-G59" firstAttribute="leading" secondItem="Wdh-9G-2hY" secondAttribute="leading" id="iHM-L5-jRu"/>
+                <constraint firstItem="CNS-0e-WYj" firstAttribute="leading" secondItem="uPD-R6-D14" secondAttribute="leading" id="iR4-LG-eiU"/>
+                <constraint firstAttribute="trailing" secondItem="VZk-j3-G59" secondAttribute="trailing" id="kEe-Of-SvB"/>
+                <constraint firstItem="uPD-R6-D14" firstAttribute="top" secondItem="gdA-4W-i9z" secondAttribute="bottom" constant="95" id="nLD-Dz-shN" customClass="NSLayoutHelper" customModule="LayoutHelper">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXMax">
+                            <real key="value" value="100"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneSE">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone4s">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhone8Plus">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXS">
+                            <real key="value" value="95"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXR">
+                            <real key="value" value="95"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstItem="cyl-fK-ZO7" firstAttribute="width" secondItem="Wdh-9G-2hY" secondAttribute="width" multiplier="0.35" id="wc7-jh-HF0"/>
+                <constraint firstItem="gdA-4W-i9z" firstAttribute="width" secondItem="cyl-fK-ZO7" secondAttribute="width" multiplier="0.657895" id="xfb-rO-aMh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="OJw-nV-bTh"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="MiK-kZ-JDK"/>
+                    <exclude reference="Pw4-6r-fGT"/>
+                    <exclude reference="Qa0-iR-xDb"/>
+                    <exclude reference="hFw-Bw-RmP"/>
+                    <exclude reference="Vy6-C9-DwO"/>
+                    <exclude reference="8c9-Mu-HAe"/>
+                    <exclude reference="nLD-Dz-shN"/>
+                    <exclude reference="BfG-mx-999"/>
+                    <exclude reference="fd1-8A-BWm"/>
+                    <exclude reference="1Ij-Pu-p6V"/>
+                    <exclude reference="1TT-B1-1AR"/>
+                    <exclude reference="2uG-aT-0hQ"/>
+                    <exclude reference="PZp-ZI-C4m"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact">
+                <mask key="constraints">
+                    <include reference="Pw4-6r-fGT"/>
+                    <exclude reference="9Ke-gd-ZBl"/>
+                    <include reference="hFw-Bw-RmP"/>
+                    <exclude reference="8xq-eE-KrY"/>
+                    <include reference="Vy6-C9-DwO"/>
+                    <exclude reference="xfb-rO-aMh"/>
+                    <include reference="8c9-Mu-HAe"/>
+                    <exclude reference="f4p-ab-g4j"/>
+                    <include reference="BfG-mx-999"/>
+                    <exclude reference="VNf-IB-SyN"/>
+                    <include reference="fd1-8A-BWm"/>
+                    <exclude reference="fdV-Qs-DKe"/>
+                    <exclude reference="iR4-LG-eiU"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular">
+                <mask key="constraints">
+                    <include reference="MiK-kZ-JDK"/>
+                    <exclude reference="f4p-ab-g4j"/>
+                    <include reference="nLD-Dz-shN"/>
+                    <include reference="1Ij-Pu-p6V"/>
+                    <include reference="PZp-ZI-C4m"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="constraints">
+                    <include reference="Qa0-iR-xDb"/>
+                    <include reference="1TT-B1-1AR"/>
+                    <exclude reference="2uG-aT-0hQ"/>
+                    <exclude reference="wc7-jh-HF0"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <exclude reference="1TT-B1-1AR"/>
+                    <exclude reference="PZp-ZI-C4m"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="136.23188405797103" y="91.071428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow-back" width="15" height="26"/>
+        <image name="navBar" width="374" height="83"/>
+    </resources>
+</document>
